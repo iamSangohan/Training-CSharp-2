@@ -16,13 +16,13 @@ namespace TravauxPratiques3
         {
             InitializeComponent();
 
-            LbDate.Text = DateTime.Now.ToShortDateString();
+            LbDate.Text = "Date : " + DateTime.Now.ToShortDateString();
             timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            LbHeure.Text = DateTime.Now.ToLongTimeString();
+            LbHeure.Text = "Heure : " + DateTime.Now.ToLongTimeString();
         }
 
         private void TxtLang_KeyPress(object sender, KeyPressEventArgs e)

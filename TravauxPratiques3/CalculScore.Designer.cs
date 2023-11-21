@@ -496,11 +496,12 @@
             // 
             // TxtScore
             // 
-            this.TxtScore.Location = new System.Drawing.Point(51, 575);
+            this.TxtScore.Location = new System.Drawing.Point(51, 582);
             this.TxtScore.Name = "TxtScore";
             this.TxtScore.ReadOnly = true;
             this.TxtScore.Size = new System.Drawing.Size(97, 20);
             this.TxtScore.TabIndex = 18;
+            this.TxtScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // timer1
             // 
