@@ -16,7 +16,7 @@ namespace TravauxPratiques3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalculScore());
+            Application.Run(new DevisPC());
         }
     }
 }

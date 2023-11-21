@@ -40,22 +40,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.TxtTel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtCNI = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.TxtCode = new System.Windows.Forms.TextBox();
+            this.label = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.TxtTech = new System.Windows.Forms.TextBox();
+            this.TxtTVA = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.TxtLang = new System.Windows.Forms.TextBox();
+            this.TxtHT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.RdFem = new System.Windows.Forms.RadioButton();
-            this.RdMas = new System.Windows.Forms.RadioButton();
+            this.Rd19 = new System.Windows.Forms.RadioButton();
+            this.Rd17 = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.ChkDip = new System.Windows.Forms.CheckBox();
-            this.ChkMotiv = new System.Windows.Forms.CheckBox();
-            this.ChkExper = new System.Windows.Forms.CheckBox();
+            this.ChkWeb = new System.Windows.Forms.CheckBox();
+            this.ChkScan = new System.Windows.Forms.CheckBox();
+            this.ChkImpr = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.CmbAge = new System.Windows.Forms.ComboBox();
+            this.CmbMode = new System.Windows.Forms.ComboBox();
             this.TxtChance = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.BtnGen = new System.Windows.Forms.Button();
@@ -131,8 +131,8 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.TxtTel);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.TxtCNI);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.TxtCode);
+            this.groupBox1.Controls.Add(this.label);
             this.groupBox1.Location = new System.Drawing.Point(62, 84);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(646, 79);
@@ -188,45 +188,45 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Tel : ";
             // 
-            // TxtCNI
+            // TxtCode
             // 
-            this.TxtCNI.Location = new System.Drawing.Point(81, 23);
-            this.TxtCNI.MaxLength = 8;
-            this.TxtCNI.Name = "TxtCNI";
-            this.TxtCNI.Size = new System.Drawing.Size(171, 20);
-            this.TxtCNI.TabIndex = 1;
+            this.TxtCode.Location = new System.Drawing.Point(81, 23);
+            this.TxtCode.MaxLength = 8;
+            this.TxtCode.Name = "TxtCode";
+            this.TxtCode.Size = new System.Drawing.Size(171, 20);
+            this.TxtCode.TabIndex = 1;
             // 
-            // label2
+            // label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "CNI : ";
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(31, 26);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(32, 13);
+            this.label.TabIndex = 0;
+            this.label.Text = "Code";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.TxtTech);
+            this.groupBox2.Controls.Add(this.TxtTVA);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.TxtLang);
+            this.groupBox2.Controls.Add(this.TxtHT);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(81, 177);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(274, 90);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Notes";
+            this.groupBox2.Text = "Prix";
             // 
-            // TxtTech
+            // TxtTVA
             // 
-            this.TxtTech.Location = new System.Drawing.Point(115, 49);
-            this.TxtTech.Name = "TxtTech";
-            this.TxtTech.Size = new System.Drawing.Size(123, 20);
-            this.TxtTech.TabIndex = 7;
-            this.TxtTech.Text = "0";
-            this.TxtTech.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTech_KeyPress);
-            this.TxtTech.Validating += new System.ComponentModel.CancelEventHandler(this.TxtTech_Validating);
+            this.TxtTVA.Location = new System.Drawing.Point(115, 49);
+            this.TxtTVA.Name = "TxtTVA";
+            this.TxtTVA.Size = new System.Drawing.Size(123, 20);
+            this.TxtTVA.TabIndex = 7;
+            this.TxtTVA.Text = "0";
+            this.TxtTVA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTech_KeyPress);
+            this.TxtTVA.Validating += new System.ComponentModel.CancelEventHandler(this.TxtTech_Validating);
             // 
             // label6
             // 
@@ -234,18 +234,18 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 20);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Technique";
+            this.label6.Text = "TVA";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TxtLang
+            // TxtHT
             // 
-            this.TxtLang.Location = new System.Drawing.Point(115, 23);
-            this.TxtLang.Name = "TxtLang";
-            this.TxtLang.Size = new System.Drawing.Size(123, 20);
-            this.TxtLang.TabIndex = 5;
-            this.TxtLang.Text = "0";
-            this.TxtLang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLang_KeyPress);
-            this.TxtLang.Validating += new System.ComponentModel.CancelEventHandler(this.TxtLang_Validating);
+            this.TxtHT.Location = new System.Drawing.Point(115, 23);
+            this.TxtHT.Name = "TxtHT";
+            this.TxtHT.Size = new System.Drawing.Size(123, 20);
+            this.TxtHT.TabIndex = 5;
+            this.TxtHT.Text = "0";
+            this.TxtHT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLang_KeyPress);
+            this.TxtHT.Validating += new System.ComponentModel.CancelEventHandler(this.TxtLang_Validating);
             // 
             // label7
             // 
@@ -253,106 +253,107 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 18);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Langue";
+            this.label7.Text = "Prix HT";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.RdFem);
-            this.groupBox3.Controls.Add(this.RdMas);
+            this.groupBox3.Controls.Add(this.Rd19);
+            this.groupBox3.Controls.Add(this.Rd17);
             this.groupBox3.Location = new System.Drawing.Point(424, 177);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(274, 90);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Sexe";
+            this.groupBox3.Text = "Ecran";
             // 
-            // RdFem
+            // Rd19
             // 
-            this.RdFem.Location = new System.Drawing.Point(70, 52);
-            this.RdFem.Name = "RdFem";
-            this.RdFem.Size = new System.Drawing.Size(141, 24);
-            this.RdFem.TabIndex = 1;
-            this.RdFem.TabStop = true;
-            this.RdFem.Text = "Feminin";
-            this.RdFem.UseVisualStyleBackColor = true;
+            this.Rd19.Location = new System.Drawing.Point(70, 52);
+            this.Rd19.Name = "Rd19";
+            this.Rd19.Size = new System.Drawing.Size(141, 24);
+            this.Rd19.TabIndex = 1;
+            this.Rd19.TabStop = true;
+            this.Rd19.Text = "19 pouces";
+            this.Rd19.UseVisualStyleBackColor = true;
             // 
-            // RdMas
+            // Rd17
             // 
-            this.RdMas.Location = new System.Drawing.Point(70, 23);
-            this.RdMas.Name = "RdMas";
-            this.RdMas.Size = new System.Drawing.Size(141, 24);
-            this.RdMas.TabIndex = 0;
-            this.RdMas.TabStop = true;
-            this.RdMas.Text = "Masculin";
-            this.RdMas.UseVisualStyleBackColor = true;
+            this.Rd17.Location = new System.Drawing.Point(70, 23);
+            this.Rd17.Name = "Rd17";
+            this.Rd17.Size = new System.Drawing.Size(141, 24);
+            this.Rd17.TabIndex = 0;
+            this.Rd17.TabStop = true;
+            this.Rd17.Text = "17 pouces";
+            this.Rd17.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.ChkDip);
-            this.groupBox4.Controls.Add(this.ChkMotiv);
-            this.groupBox4.Controls.Add(this.ChkExper);
+            this.groupBox4.Controls.Add(this.ChkWeb);
+            this.groupBox4.Controls.Add(this.ChkScan);
+            this.groupBox4.Controls.Add(this.ChkImpr);
             this.groupBox4.Location = new System.Drawing.Point(62, 279);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(646, 94);
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Bonus";
+            this.groupBox4.Text = "Options";
             // 
-            // ChkDip
+            // ChkWeb
             // 
-            this.ChkDip.AutoSize = true;
-            this.ChkDip.Location = new System.Drawing.Point(485, 45);
-            this.ChkDip.Name = "ChkDip";
-            this.ChkDip.Size = new System.Drawing.Size(69, 17);
-            this.ChkDip.TabIndex = 2;
-            this.ChkDip.Text = "Diplomes";
-            this.ChkDip.UseVisualStyleBackColor = true;
+            this.ChkWeb.AutoSize = true;
+            this.ChkWeb.Location = new System.Drawing.Point(492, 45);
+            this.ChkWeb.Name = "ChkWeb";
+            this.ChkWeb.Size = new System.Drawing.Size(69, 17);
+            this.ChkWeb.TabIndex = 2;
+            this.ChkWeb.Text = "Webcam";
+            this.ChkWeb.UseVisualStyleBackColor = true;
             // 
-            // ChkMotiv
+            // ChkScan
             // 
-            this.ChkMotiv.AutoSize = true;
-            this.ChkMotiv.Location = new System.Drawing.Point(319, 45);
-            this.ChkMotiv.Name = "ChkMotiv";
-            this.ChkMotiv.Size = new System.Drawing.Size(75, 17);
-            this.ChkMotiv.TabIndex = 1;
-            this.ChkMotiv.Text = "Motivation";
-            this.ChkMotiv.UseVisualStyleBackColor = true;
+            this.ChkScan.AutoSize = true;
+            this.ChkScan.Location = new System.Drawing.Point(290, 45);
+            this.ChkScan.Name = "ChkScan";
+            this.ChkScan.Size = new System.Drawing.Size(66, 17);
+            this.ChkScan.TabIndex = 1;
+            this.ChkScan.Text = "Scanner";
+            this.ChkScan.UseVisualStyleBackColor = true;
             // 
-            // ChkExper
+            // ChkImpr
             // 
-            this.ChkExper.AutoSize = true;
-            this.ChkExper.Location = new System.Drawing.Point(65, 45);
-            this.ChkExper.Name = "ChkExper";
-            this.ChkExper.Size = new System.Drawing.Size(152, 17);
-            this.ChkExper.TabIndex = 0;
-            this.ChkExper.Text = "Experience professionnelle";
-            this.ChkExper.UseVisualStyleBackColor = true;
+            this.ChkImpr.AutoSize = true;
+            this.ChkImpr.Location = new System.Drawing.Point(73, 45);
+            this.ChkImpr.Name = "ChkImpr";
+            this.ChkImpr.Size = new System.Drawing.Size(77, 17);
+            this.ChkImpr.TabIndex = 0;
+            this.ChkImpr.Text = "Imprimante";
+            this.ChkImpr.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             this.label8.Location = new System.Drawing.Point(71, 393);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 20);
+            this.label8.Size = new System.Drawing.Size(102, 20);
             this.label8.TabIndex = 10;
-            this.label8.Text = "Age";
+            this.label8.Text = "Mode de paiement";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // CmbAge
+            // CmbMode
             // 
-            this.CmbAge.FormattingEnabled = true;
-            this.CmbAge.Items.AddRange(new object[] {
-            "20 - 30",
-            "30 - 40",
-            "40 et plus"});
-            this.CmbAge.Location = new System.Drawing.Point(126, 392);
-            this.CmbAge.Name = "CmbAge";
-            this.CmbAge.Size = new System.Drawing.Size(121, 21);
-            this.CmbAge.TabIndex = 11;
+            this.CmbMode.FormattingEnabled = true;
+            this.CmbMode.Items.AddRange(new object[] {
+            "Comptant",
+            "Sur 6 mois",
+            "Sur 12 mois",
+            "Sur 18 mois"});
+            this.CmbMode.Location = new System.Drawing.Point(170, 392);
+            this.CmbMode.Name = "CmbMode";
+            this.CmbMode.Size = new System.Drawing.Size(121, 21);
+            this.CmbMode.TabIndex = 11;
             // 
             // TxtChance
             // 
-            this.TxtChance.Location = new System.Drawing.Point(440, 393);
+            this.TxtChance.Location = new System.Drawing.Point(457, 392);
             this.TxtChance.Name = "TxtChance";
             this.TxtChance.ReadOnly = true;
             this.TxtChance.Size = new System.Drawing.Size(123, 20);
@@ -361,16 +362,16 @@
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(319, 395);
+            this.label9.Location = new System.Drawing.Point(355, 394);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 18);
+            this.label9.Size = new System.Drawing.Size(100, 18);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Valeur de la chance";
+            this.label9.Text = "Remise au hasard";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BtnGen
             // 
-            this.BtnGen.Location = new System.Drawing.Point(626, 392);
+            this.BtnGen.Location = new System.Drawing.Point(626, 391);
             this.BtnGen.Name = "BtnGen";
             this.BtnGen.Size = new System.Drawing.Size(75, 21);
             this.BtnGen.TabIndex = 14;
@@ -441,9 +442,9 @@
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Location = new System.Drawing.Point(165, 510);
+            this.groupBox5.Location = new System.Drawing.Point(190, 510);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(543, 160);
+            this.groupBox5.Size = new System.Drawing.Size(518, 160);
             this.groupBox5.TabIndex = 16;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Liste des personnes";
@@ -451,7 +452,7 @@
             // listBox4
             // 
             this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(416, 39);
+            this.listBox4.Location = new System.Drawing.Point(401, 39);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(109, 108);
             this.listBox4.TabIndex = 11;
@@ -459,7 +460,7 @@
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(282, 39);
+            this.listBox3.Location = new System.Drawing.Point(268, 39);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(109, 108);
             this.listBox3.TabIndex = 10;
@@ -467,7 +468,7 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(157, 39);
+            this.listBox2.Location = new System.Drawing.Point(138, 39);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(109, 108);
             this.listBox2.TabIndex = 9;
@@ -475,14 +476,14 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(22, 38);
+            this.listBox1.Location = new System.Drawing.Point(6, 38);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(109, 108);
             this.listBox1.TabIndex = 8;
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(450, 19);
+            this.label19.Location = new System.Drawing.Point(433, 19);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(40, 17);
             this.label19.TabIndex = 6;
@@ -491,7 +492,7 @@
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(319, 19);
+            this.label17.Location = new System.Drawing.Point(300, 19);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(45, 17);
             this.label17.TabIndex = 4;
@@ -500,7 +501,7 @@
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(188, 19);
+            this.label15.Location = new System.Drawing.Point(171, 19);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(40, 17);
             this.label15.TabIndex = 2;
@@ -509,26 +510,26 @@
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(56, 19);
+            this.label12.Location = new System.Drawing.Point(37, 19);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 17);
             this.label12.TabIndex = 0;
-            this.label12.Text = "CNI";
+            this.label12.Text = "Code";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(57, 543);
+            this.label10.Location = new System.Drawing.Point(19, 546);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 29);
+            this.label10.Size = new System.Drawing.Size(164, 29);
             this.label10.TabIndex = 17;
-            this.label10.Text = "Score";
+            this.label10.Text = "Montant TTC";
             // 
             // TxtScore
             // 
-            this.TxtScore.Location = new System.Drawing.Point(51, 582);
+            this.TxtScore.Location = new System.Drawing.Point(51, 587);
             this.TxtScore.Name = "TxtScore";
             this.TxtScore.ReadOnly = true;
             this.TxtScore.Size = new System.Drawing.Size(97, 20);
@@ -551,7 +552,7 @@
             this.Controls.Add(this.BtnGen);
             this.Controls.Add(this.TxtChance);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.CmbAge);
+            this.Controls.Add(this.CmbMode);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -583,8 +584,8 @@
         private System.Windows.Forms.Label LbHeure;
         private System.Windows.Forms.Label LbDate;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TxtCNI;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TxtCode;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.TextBox TxtPrenom;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtNom;
@@ -592,16 +593,16 @@
         private System.Windows.Forms.TextBox TxtTel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox TxtTech;
+        private System.Windows.Forms.TextBox TxtTVA;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TxtLang;
+        private System.Windows.Forms.TextBox TxtHT;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton RdFem;
-        private System.Windows.Forms.RadioButton RdMas;
+        private System.Windows.Forms.RadioButton Rd19;
+        private System.Windows.Forms.RadioButton Rd17;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox CmbAge;
+        private System.Windows.Forms.ComboBox CmbMode;
         private System.Windows.Forms.TextBox TxtChance;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button BtnGen;
@@ -616,9 +617,9 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.CheckBox ChkDip;
-        private System.Windows.Forms.CheckBox ChkMotiv;
-        private System.Windows.Forms.CheckBox ChkExper;
+        private System.Windows.Forms.CheckBox ChkWeb;
+        private System.Windows.Forms.CheckBox ChkScan;
+        private System.Windows.Forms.CheckBox ChkImpr;
         private System.Windows.Forms.TextBox TxtScore;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListBox listBox4;

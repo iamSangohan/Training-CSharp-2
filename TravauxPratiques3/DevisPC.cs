@@ -39,17 +39,17 @@ namespace TravauxPratiques3
 
         private void TxtLang_Validating(object sender, CancelEventArgs e)
         {
-            if (TxtLang.Text == "")
+            if (TxtHT.Text == "")
             {
                 MessageBox.Show("Il faut saisir une note");
                 e.Cancel = true;
             }
             else
             {
-                if (int.Parse(TxtLang.Text) > 20)
+                // min 500
+                if (int.Parse(TxtHT.Text) < 500)
                 {
-                    MessageBox.Show("La note doit être entre 0 et 20");
-                    TxtLang.SelectAll();
+                    MessageBox.Show("La note doit être supérieure ou égale à 500");
                     e.Cancel = true;
                 }
             }
@@ -57,17 +57,17 @@ namespace TravauxPratiques3
 
         private void TxtTech_Validating(object sender, CancelEventArgs e)
         {
-            if (TxtLang.Text == "")
+            if (TxtTVA.Text == "")
             {
-                MessageBox.Show("Il faut saisir une note");
+                MessageBox.Show("Il faut saisir la TVA");
                 e.Cancel = true;
             }
             else
             {
-                if (int.Parse(TxtLang.Text) > 20)
+                // entre 0 et 22
+                if ((int.Parse(TxtTVA.Text) < 0) || (int.Parse(TxtTVA.Text) > 22))
                 {
-                    MessageBox.Show("La note doit être entre 0 et 20");
-                    TxtLang.SelectAll();
+                    MessageBox.Show("La TVA doit être comprise entre 0 et 22");
                     e.Cancel = true;
                 }
             }
@@ -77,68 +77,73 @@ namespace TravauxPratiques3
         {
             int x;
             Random alea = new Random();
-            x = alea.Next(0, 16);
+            x = alea.Next(0, 30);
             TxtChance.Text = x.ToString();
         }
 
         private void BtnInit_Click(object sender, EventArgs e)
         {
-            TxtCNI.Text = "";
+            TxtCode.Text = "";
             TxtNom.Text = "";
             TxtPrenom.Text = "";
-            TxtLang.Text = "0";
-            TxtTech.Text = "0";
+            TxtHT.Text = "0";
+            TxtTVA.Text = "0";
             TxtChance.Text = "0";
             TxtTel.Text = "";
+            TxtScore.Text = "0";
 
-            ChkExper.Checked = false;
-            ChkMotiv.Checked = false;
-            ChkDip.Checked = false;
+            ChkImpr.Checked = false;
+            ChkScan.Checked = false;
+            ChkWeb.Checked = false;
 
-            RdFem.Checked = false;
-            RdMas.Checked = false;
+            Rd19.Checked = false;
+            Rd17.Checked = false;
 
-            CmbAge.SelectedIndex = -1;
+            CmbMode.SelectedIndex = -1;
 
             BtnAjout.Enabled = false;
         }
 
         private void BtnCalc_Click(object sender, EventArgs e)
         {
-            if ((TxtCNI.Text == "") || TxtLang.Text == "" || TxtNom.Text == "" || TxtPrenom.Text == "" || TxtTech.Text == "" || TxtTel.Text == "")
+            if ((TxtCode.Text == "") || TxtHT.Text == "" || TxtNom.Text == "" || TxtPrenom.Text == "" || TxtTVA.Text == "" || TxtTel.Text == "")
 {
                 MessageBox.Show("Il faut saisir toutes les informations");
                 return;
             }
 
-            int note, sexe, bonus, age, chance, score;
-            note = int.Parse(TxtLang.Text) + int.Parse(TxtTech.Text);
-            sexe = (RdMas.Checked) ? 7 : 5;
-            bonus = (ChkExper.Checked) ? 15 : 0;
-            bonus += (ChkMotiv.Checked) ? 10 : 0;
-            bonus += (ChkDip.Checked) ? 5 : 0;
+            int prix, ecran, bonus, chance;
+            double mode, total;
+            prix = int.Parse(TxtHT.Text) + int.Parse(TxtTVA.Text);
+            ecran = (Rd17.Checked) ? 200 : 310;
+            bonus = (ChkImpr.Checked) ? 120 : 0;
+            bonus += (ChkScan.Checked) ? 60 : 0;
+            bonus += (ChkWeb.Checked) ? 40 : 0;
             chance = int.Parse(TxtChance.Text);
 
-            switch (CmbAge.SelectedIndex)
+            switch (CmbMode.SelectedIndex)
             {
                 case 0:
-                    age = 20; break;
+                    mode = 0.95; break;
                 case 1:
-                    age = 10; break;
+                    mode = 1.05; break;
                 case 2:
-                    age = 5; break;
+                    mode = 1.2; break;
+                case 3:
+                    mode = 1.4; break;
                 default:
-                    age = 0; break;
+                    mode = 0; break;
             }
 
-            score = note + sexe + bonus + age + chance;
-            TxtScore.Text = score.ToString();
+            total = prix + ecran + bonus + chance;
+            total *= mode;
+            TxtScore.Text = total.ToString();
             BtnAjout.Enabled = true;
         }
 
         private void BtnAjout_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(TxtCNI.Text);
+            listBox1.Items.Add(TxtCode.Text);
             listBox2.Items.Add(TxtNom.Text);
             listBox3.Items.Add(TxtPrenom.Text);
             listBox4.Items.Add(TxtScore.Text);
