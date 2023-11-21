@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DevisPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevisPC.Designer.cs">
+      <DependentUpon>DevisPC.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalculScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DevisPC.resx">
+      <DependentUpon>DevisPC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculScore.resx">
       <DependentUpon>CalculScore.cs</DependentUpon>
     </EmbeddedResource>
